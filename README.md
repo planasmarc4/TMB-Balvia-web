@@ -17,7 +17,7 @@
 }
 html,body{height:100%}
 body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);display:flex;min-height:100vh;overflow-x:hidden}
- 
+
 /* ═══ SIDEBAR ═══ */
 .sidebar{display:flex;min-height:100vh;position:fixed;top:0;left:0;z-index:100}
 .sb-rail{width:var(--sw);background:var(--panel);display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:4px}
@@ -33,7 +33,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .sb-icon-btn.active .ico-lbl{color:rgba(255,255,255,.8)}
 .sb-rail-bottom{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:6px;padding-bottom:16px}
 .line-dot{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Share Tech Mono',monospace;font-size:9px;font-weight:700;color:#fff}
- 
+
 .sb-drawer{width:var(--sw2);background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto}
 .sb-drawer-header{padding:18px 20px 14px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg2);z-index:10}
 .sb-drawer-title{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--ink3)}
@@ -44,11 +44,11 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .sb-link:hover{color:var(--panel);background:var(--bg3)}
 .sb-link.active{color:var(--l1);background:rgba(255,107,0,.06);border-left-color:var(--l1)}
 .sb-link .lnum{font-family:'Share Tech Mono',monospace;font-size:10px;margin-left:auto;opacity:.4}
- 
+
 /* drawer sections */
 .drawer-section{display:none;flex-direction:column;flex:1}
 .drawer-section.active{display:flex}
- 
+
 /* ═══ MAIN ═══ */
 .main{margin-left:calc(var(--sw) + var(--sw2));flex:1;display:flex;flex-direction:column;min-height:100vh}
 .topbar{background:var(--panel);padding:0 36px;height:54px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
@@ -57,20 +57,20 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .tb-right{display:flex;align-items:center;gap:8px}
 .tb-pill{font-family:'Share Tech Mono',monospace;font-size:10px;padding:4px 10px;border-radius:6px}
 .content{padding:32px 36px;flex:1}
- 
+
 /* pages */
 .page{display:none;animation:pIn .25s ease}
 .page.active{display:block}
 @keyframes pIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
- 
+
 /* section anchors */
 .anchor-section{padding-top:8px;margin-bottom:36px;scroll-margin-top:80px}
 .anchor-section:first-child{padding-top:0}
- 
+
 .section-label{font-family:'Share Tech Mono',monospace;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;display:flex;align-items:center;gap:10px}
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 .section-label span{background:var(--bg);padding-right:10px}
- 
+
 /* ═══ HOME ═══ */
 .hero-band{background:var(--panel);border-radius:18px;padding:44px;margin-bottom:26px;position:relative;overflow:hidden}
 .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
@@ -80,13 +80,13 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .hero-title span{color:var(--l1)}
 .hero-sub{font-size:14px;color:var(--ink3);max-width:440px;line-height:1.65;font-weight:300}
 .hero-bg-txt{position:absolute;bottom:20px;right:28px;font-family:'Share Tech Mono',monospace;font-size:80px;color:rgba(255,255,255,.04);line-height:1;user-select:none}
- 
+
 .kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}
 .kpi{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;transition:all .2s}
 .kpi:hover{border-color:var(--l1)}
 .kpi-n{font-family:'Share Tech Mono',monospace;font-size:32px;color:var(--l1);line-height:1;margin-bottom:3px}
 .kpi-l{font-size:10px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.5px}
- 
+
 .net-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:26px;margin-bottom:26px}
 .map-flex{display:flex;gap:56px;padding:6px 0;flex-wrap:wrap}
 .mline-wrap{display:flex;flex-direction:column}
@@ -97,13 +97,13 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .mseg{width:4px;height:28px;margin-left:4px}
 .mname{font-size:13px;font-weight:600}
 .mix-badge{font-size:9px;padding:2px 7px;border-radius:4px;font-weight:700;letter-spacing:.5px;font-family:'Share Tech Mono',monospace;margin-left:5px}
- 
+
 .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .hour-card{background:var(--panel);border-radius:10px;padding:20px}
 .hour-tag{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:7px}
 .hour-val{font-family:'Share Tech Mono',monospace;font-size:26px;color:var(--ink);line-height:1;letter-spacing:1px}
 .hour-note{font-size:11px;color:var(--ink3);margin-top:4px}
- 
+
 /* ═══ NOTÍCIES / COMUNICATS / CURIOSITATS / HISTORIA ═══ */
 .news-feed{display:flex;flex-direction:column;gap:16px}
 .news-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:box-shadow .2s}
@@ -116,16 +116,16 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .news-date{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--ink3)}
 .news-title{font-size:16px;font-weight:800;font-style:italic;color:var(--panel);text-transform:uppercase;line-height:1.2}
 .news-body{padding:0 18px 18px 23px;font-size:13px;color:var(--ink3);line-height:1.7;border-left:5px solid var(--border)}
- 
+
 /* table inside news */
 .mini-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px}
 .mini-table th{background:var(--panel);color:var(--ink);padding:7px 12px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;text-align:left}
 .mini-table td{padding:7px 12px;border-bottom:1px solid var(--border);color:var(--panel)}
 .mini-table tr:last-child td{border-bottom:none}
- 
+
 /* network diagram inside news */
 .inline-net{font-family:'Share Tech Mono',monospace;font-size:12px;background:var(--bg3);border-radius:8px;padding:14px 16px;margin:10px 0;color:var(--panel3);line-height:1.8;overflow-x:auto}
- 
+
 /* ═══ MATERIAL ═══ */
 .train-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:22px}
 .tcard{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:all .22s}
@@ -139,9 +139,9 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .tcard-desc{font-size:13px;color:var(--ink3);line-height:1.6}
 .tcard-hint{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-family:'Share Tech Mono',monospace;opacity:.55;transition:opacity .15s}
 .tcard:hover .tcard-hint{opacity:1}
- 
+
 .tech-note{background:var(--panel);border-radius:12px;padding:16px 20px;font-size:13px;color:var(--ink3);line-height:1.65;display:flex;gap:10px;align-items:flex-start}
- 
+
 /* ═══ VOTACIÓ ═══ */
 .vote-grid{display:grid;gap:20px}
 .vcard{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden}
@@ -175,7 +175,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .vmeta{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--ink3);margin-top:10px;letter-spacing:.5px}
 .alert-banner{background:var(--panel);border-radius:12px;padding:14px 18px;display:flex;align-items:flex-start;gap:10px;margin-bottom:20px;border-left:4px solid var(--l1)}
 .alert-banner-txt{font-size:13px;color:var(--ink3);line-height:1.55}
- 
+
 /* ═══ MODAL ═══ */
 .overlay{display:none;position:fixed;inset:0;background:rgba(26,29,46,.85);z-index:300;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
 .overlay.open{display:flex}
@@ -192,12 +192,12 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 .spec-tile{background:var(--bg3);border-radius:9px;padding:13px 15px;border:1px solid var(--border)}
 .spec-k{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:5px}
 .spec-v{font-size:17px;font-weight:800;font-style:italic;color:var(--panel)}
- 
+
 #clock{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--ink3);border-left:1px solid var(--panel3);padding-left:12px}
 </style>
 </head>
 <body>
- 
+
 <!-- ════════════ SIDEBAR ════════════ -->
 <aside class="sidebar">
   <div class="sb-rail">
@@ -227,7 +227,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
       <div class="line-dot" style="background:var(--l1b);color:#000">L1B</div>
     </div>
   </div>
- 
+
   <div class="sb-drawer">
     <!-- HOME -->
     <div class="drawer-section active" id="drawer-home">
@@ -243,7 +243,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
         <button class="sb-link" onclick="scrollTo('home','s-horaris')">Horaris <span class="lnum">04</span></button>
       </div>
     </div>
- 
+
     <!-- NOTÍCIES -->
     <div class="drawer-section" id="drawer-noticies">
       <div class="sb-drawer-header">
@@ -253,6 +253,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
       <div class="sb-menu">
         <div class="sb-section-label">Comunicats oficials</div>
         <button class="sb-link active" onclick="scrollTo('noticies','s-comunicats')">Tots els comunicats <span class="lnum">→</span></button>
+        <button class="sb-link" onclick="scrollTo('noticies','com-tall-total')">🔴 Tall augmentat — L1+L1B <span class="lnum">→</span></button>
         <button class="sb-link" onclick="scrollTo('noticies','com-tall-l1b')">⚠️ Tall L1B Mina–RC <span class="lnum">→</span></button>
         <button class="sb-link" onclick="scrollTo('noticies','com-encreuament')">Encreuament segur L1B <span class="lnum">→</span></button>
         <button class="sb-link" onclick="scrollTo('noticies','com-vallat-inici')">Inici envallat Campferro F. <span class="lnum">→</span></button>
@@ -274,7 +275,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
         <button class="sb-link" onclick="scrollTo('noticies','hist-parc')">El Parc Karp <span class="lnum">→</span></button>
       </div>
     </div>
- 
+
     <!-- MATERIAL -->
     <div class="drawer-section" id="drawer-material">
       <div class="sb-drawer-header">
@@ -290,7 +291,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
         <button class="sb-link" onclick="scrollTo('material','mat-nota')">Notes tècniques <span class="lnum">→</span></button>
       </div>
     </div>
- 
+
     <!-- VOTACIÓ -->
     <div class="drawer-section" id="drawer-votacions">
       <div class="sb-drawer-header">
@@ -314,13 +315,14 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
       <div class="sb-menu">
         <div class="sb-section-label">Obres i actuacions</div>
         <button class="sb-link active" onclick="scrollTo('inversions','inv-envallat-fi')">Fi envallat Campferro F. <span class="lnum">→</span></button>
+        <button class="sb-link" onclick="scrollTo('inversions','inv-campfred')">Pressupost extensió Campfred <span class="lnum">→</span></button>
         <div class="sb-section-label">Estudis de cost</div>
         <button class="sb-link" onclick="scrollTo('inversions','inv-estudi-vallat')">Estudi vallat estacions <span class="lnum">→</span></button>
       </div>
     </div>
   </div>
 </aside>
- 
+
 <!-- ════════════ MAIN ════════════ -->
 <main class="main">
   <div class="topbar">
@@ -335,9 +337,9 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
       <span id="clock">--:--:--</span>
     </div>
   </div>
- 
+
   <div class="content">
- 
+
     <!-- ══════ HOME ══════ -->
     <div class="page active" id="page-home">
       <div class="anchor-section" id="s-benvinguda">
@@ -350,7 +352,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
           <div class="hero-bg-txt">TMB</div>
         </div>
       </div>
- 
+
       <div class="anchor-section" id="s-xifres">
         <div class="section-label"><span>Xifres de la xarxa</span></div>
         <div class="kpi-strip">
@@ -360,7 +362,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
           <div class="kpi"><div class="kpi-n">1000mm</div><div class="kpi-l">Ample de via</div></div>
         </div>
       </div>
- 
+
       <div class="anchor-section" id="s-mapa">
         <div class="section-label"><span>Mapa de la xarxa</span></div>
         <div class="net-card">
@@ -388,7 +390,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
           </div>
         </div>
       </div>
- 
+
       <div class="anchor-section" id="s-horaris">
         <div class="section-label"><span>Horaris de servei</span></div>
         <div class="hours-grid">
@@ -397,15 +399,55 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
         </div>
       </div>
     </div>
- 
+
     <!-- ══════ NOTÍCIES ══════ -->
     <div class="page" id="page-noticies">
- 
+
       <!-- COMUNICATS -->
       <div class="anchor-section" id="s-comunicats">
         <div class="section-label"><span>Comunicats Oficials — TMB Baliva</span></div>
         <div class="news-feed">
- 
+
+          <div class="news-card" id="com-tall-total">
+            <div class="news-card-head">
+              <div class="news-accent" style="background:#ef4444"></div>
+              <div class="news-head-body">
+                <div class="news-meta">
+                  <span class="news-type-tag" style="background:rgba(239,68,68,.18);color:#ef4444">🔴 Alerta de servei</span>
+                  <span class="news-date">Fins al 5 de maig aprox.</span>
+                </div>
+                <div class="news-title">El tall augmenta d'escala: L1 i L1B afectades per la reestructuració de la xarxa</div>
+              </div>
+            </div>
+            <div class="news-body">
+              Degut a l'aparició d'un <strong>nou poble anomenat Campfred</strong>, la TMB ha procedit a una <strong>reestructuració completa de la xarxa</strong>. S'estudia la possibilitat que ambdues línies existents hi arribin en el futur.<br><br>
+              Com a conseqüència d'aquesta planificació, el tram de la <strong>L1</strong> entre <strong>Campferro</strong> i <strong>Parc Karp</strong> quedarà <strong>tancat fins aproximadament el 5 de maig</strong>, sumant-se al tall ja vigent de la L1B entre Mina i Rocafonda Centre.<br><br>
+
+              <table class="mini-table">
+                <tr><th>Línia</th><th>Tram tancat</th><th>Motiu</th></tr>
+                <tr><td>🟠 L1</td><td>Campferro → Parc Karp</td><td>Reestructuració per Campfred</td></tr>
+                <tr><td>🟢 L1B</td><td>Mina → Rocafonda Centre</td><td>Obres de millora (ja vigent)</td></tr>
+              </table>
+
+              <br><strong style="font-size:14px">🗺️ Estat de la xarxa durant el tall total</strong><br><br>
+              <div class="inline-net" style="line-height:2.1">
+<span style="color:#ff6b00">L1 🟠</span>  Campferro Ferreteria ——— <span style="color:#ff6b00;font-weight:bold">Campferro ⟵terminus</span>   <span style="color:#ef4444">✗ Campferro→Parc Karp: TANCAT</span>
+           ↕ intercanvi
+<span style="color:#00d46a">L1B 🟢</span> Campferro Ferreteria ——— <span style="color:#00d46a;font-weight:bold">Mina ⟵terminus</span>          <span style="color:#ef4444">✗ Mina→Rocafonda Centre: TANCAT</span>
+              </div>
+
+              <br><strong style="font-size:13px">🚌 Servei substitutori amb el SMAB</strong><br>
+              <div style="background:var(--bg3);border:1.5px solid var(--border);border-radius:10px;padding:14px 16px;margin:10px 0;font-size:13px;line-height:1.7">
+                En coordinació amb el <strong>Servei Metropolità d'Autobusos de Baliva (SMAB)</strong>, es garantiran totes les connexions que eren possibles amb el metro. Les línies d'autobús substitutòries cobriranr els trams tancats durant el període d'obres.
+              </div>
+
+              <div style="background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:14px 16px;margin-top:10px;font-size:13px;color:var(--panel);font-style:italic;text-align:center">
+                "Gràcies per la seva comprensió.<br>
+                <strong>Transports Metropolitans de Baliva (TMB)</strong>"
+              </div>
+            </div>
+          </div>
+
           <div class="news-card" id="com-tall-l1b">
             <div class="news-card-head">
               <div class="news-accent" style="background:#ef4444"></div>
@@ -419,19 +461,19 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
             </div>
             <div class="news-body">
               Per <strong>obres de millora</strong>, el tram de la <strong>L1B</strong> entre <strong>Mina</strong> i <strong>Rocafonda Centre</strong> romandrà <strong>tancat fins al 5 de maig</strong>. Durant aquest període, el servei de la L1B operarà únicament entre <strong>Campferro Ferreteria</strong> i <strong>Mina</strong>, on el tren donarà la volta.<br><br>
- 
+
               <table class="mini-table">
                 <tr><th>Estació</th><th>Situació</th></tr>
                 <tr><td>🟢 Campferro Ferreteria</td><td>Servei normal</td></tr>
                 <tr><td>🟢 Mina</td><td>Terminus temporal — el tren torna</td></tr>
                 <tr><td>🔴 Rocafonda Centre (L1B)</td><td>Tancada temporalment per obres</td></tr>
               </table>
- 
+
               <br><strong style="font-size:14px">🗺️ Com arribar a cada estació afectada:</strong><br><br>
- 
+
               <!-- MAPA VIATGERS -->
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0">
- 
+
                 <!-- MINA -->
                 <div style="background:var(--bg3);border:1.5px solid var(--border);border-radius:12px;padding:16px">
                   <div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px">Destí: Mina ⛏️</div>
@@ -451,7 +493,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
                   </div>
                   <div style="margin-top:10px;background:rgba(0,212,106,.1);border-radius:8px;padding:8px 10px;font-size:11px;color:#16a34a;font-weight:600">✅ Sense canvis per al teu trajecte</div>
                 </div>
- 
+
                 <!-- ROCAFONDA CENTRE -->
                 <div style="background:var(--bg3);border:1.5px solid var(--border);border-radius:12px;padding:16px">
                   <div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px">Destí: Rocafonda Centre 🔄</div>
@@ -471,9 +513,9 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
                   </div>
                   <div style="margin-top:10px;background:rgba(255,107,0,.1);border-radius:8px;padding:8px 10px;font-size:11px;color:#c2410c;font-weight:600">⚠️ Usar la L1, no la L1B</div>
                 </div>
- 
+
               </div>
- 
+
               <!-- DIAGRAMA XARXA DURANT TALL -->
               <div style="margin-top:14px">
                 <div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px">Estat de la xarxa durant el tall</div>
@@ -483,11 +525,11 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
 <span style="color:#00d46a">L1B 🟢</span> Campferro Ferreteria ——————————————— <span style="color:#00d46a;font-weight:bold">Mina ⟵terminus</span>   <span style="color:#ef4444">✗ Mina→RC: TANCAT</span>
                 </div>
               </div>
- 
+
               <br>La TMB lamenta els inconvenients causats i preveu la <strong>reobertura total del servei el 5 de maig</strong>.
             </div>
           </div>
- 
+
           <div class="news-card" id="com-encreuament">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1b)"></div>
@@ -511,7 +553,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               <br>La TMB demana disculpes pels possibles inconvenients durant els treballs i assegura que el servei de trens <strong>no es veurà afectat</strong>.
             </div>
           </div>
- 
+
           <div class="news-card" id="com-vallat-estudi">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1)"></div>
@@ -535,7 +577,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               <br>Les dades econòmiques d'aquest estudi seran <strong>d'accés públic</strong> un cop finalitzat. La TMB preveu presentar el pressupost definitiu en les properes setmanes.
             </div>
           </div>
- 
+
                     <div class="news-card" id="com-encartellament">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1)"></div>
@@ -558,7 +600,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               <br>La TMB continua treballant per oferir una experiència de viatge clara i còmoda per a tots els usuaris de la xarxa.
             </div>
           </div>
- 
+
           <div class="news-card" id="com-renom">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1b)"></div>
@@ -582,7 +624,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               </table>
             </div>
           </div>
- 
+
           <div class="news-card" id="com-voltatge">
             <div class="news-card-head">
               <div class="news-accent" style="background:#ef4444"></div>
@@ -599,7 +641,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               ⚠️ Els viatgers que desitgin <strong>trasbordar entre la L1 i la L1B</strong> hauran de fer un <strong>canvi d'andana</strong> a l'estació de <strong>Campferro Ferreteria</strong> o <strong>Rocafonda Centre</strong>, seguint sempre la senyalística de l'estació.
             </div>
           </div>
- 
+
           <div class="news-card" id="com-obertura-l1b">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1b)"></div>
@@ -619,7 +661,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               El servei opera en horari de feiners <strong>5:00–00:00</strong> i festius/vigílies <strong>5:00–2:00</strong>.
             </div>
           </div>
- 
+
           <div class="news-card" id="com-material">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1)"></div>
@@ -641,7 +683,7 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               La <strong>Sèrie 100</strong> ha estat equipada amb nous pantògrafs compatibles amb la catenària de 1.200 Vcc de la L1B, i ja no pot circular per la L1 (1.500 Vcc).
             </div>
           </div>
- 
+
           <div class="news-card" id="com-horaris">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1)"></div>
@@ -662,15 +704,15 @@ body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--panel);disp
               </table>
             </div>
           </div>
- 
+
         </div>
       </div>
- 
+
       <!-- CURIOSITATS -->
       <div class="anchor-section" id="s-curiositats">
         <div class="section-label"><span>Curiositats Tècniques</span></div>
         <div class="news-feed">
- 
+
           <div class="news-card" id="cur-creuada">
             <div class="news-card-head">
               <div class="news-accent" style="background:#a855f7"></div>
@@ -697,7 +739,7 @@ Campferro Ferreteria          Mina
               </div>
             </div>
           </div>
- 
+
           <div class="news-card" id="cur-andanes">
             <div class="news-card-head">
               <div class="news-accent" style="background:#a855f7"></div>
@@ -726,15 +768,15 @@ Campferro Ferreteria          Mina
               </table>
             </div>
           </div>
- 
+
         </div>
       </div>
- 
+
       <!-- HISTORIA -->
       <div class="anchor-section" id="s-historia">
         <div class="section-label"><span>Història de la Xarxa</span></div>
         <div class="news-feed">
- 
+
           <div class="news-card" id="hist-carbo">
             <div class="news-card-head">
               <div class="news-accent" style="background:#f59e0b"></div>
@@ -751,7 +793,7 @@ Campferro Ferreteria          Mina
               El primer tram construït va ser el que unia <strong>Campferro Ferreteria</strong> amb <strong>Campferro</strong>. La ferreteria era llavors el cor econòmic de la vila, proveint eines i materials a tots els miners i artesans de la planície. L'estació de Campferro Ferreteria va ser la primera pedra de tot el que vindria després.
             </div>
           </div>
- 
+
           <div class="news-card" id="hist-rocafonda">
             <div class="news-card-head">
               <div class="news-accent" style="background:#f59e0b"></div>
@@ -768,7 +810,7 @@ Campferro Ferreteria          Mina
               Durant anys, Rocafonda va ser el terminus sud. Les demandes populars van créixer fins que la TMB va inaugurar <strong>Rocafonda Centre</strong>, al bell mig de la vila. En aquell moment, l'estació original va mantenir el nom, i l'antiga va passar a ser <strong>Rocafonda Centre</strong>. Va ser un dia de festa per a tots els habitants.
             </div>
           </div>
- 
+
           <div class="news-card" id="hist-parc">
             <div class="news-card-head">
               <div class="news-accent" style="background:#f59e0b"></div>
@@ -785,11 +827,11 @@ Campferro Ferreteria          Mina
               Paral·lelament, les demandes dels miners de Campferro van impulsar la creació de la <strong>L1B</strong>: una línia independent que unia directament Campferro Ferreteria amb la Mina i Rocafonda Centre, evitant als treballadors haver de creuar tota la vila.
             </div>
           </div>
- 
+
         </div>
       </div>
     </div>
- 
+
     <!-- ══════ MATERIAL ══════ -->
     <div class="page" id="page-material">
       <div class="anchor-section" id="s-flota">
@@ -881,7 +923,7 @@ Campferro Ferreteria          Mina
           </div>
         </div>
       </div>
- 
+
       <div class="anchor-section" id="mat-nota">
         <div class="tech-note">
           <span style="font-size:18px;flex-shrink:0">⚡</span>
@@ -889,7 +931,7 @@ Campferro Ferreteria          Mina
         </div>
       </div>
     </div>
- 
+
     <!-- ══════ VOTACIÓ ══════ -->
     <div class="page" id="page-votacions">
       <div class="anchor-section" id="vot-info">
@@ -898,7 +940,7 @@ Campferro Ferreteria          Mina
           <div class="alert-banner-txt">Les votacions són <strong style="color:var(--l1)">consultives</strong>. La decisió final correspon al Govern de Baliva i l'<strong style="color:var(--l1)">AFB</strong>. Cap canvi s'espera fins al 2028.</div>
         </div>
       </div>
- 
+
       <div class="vote-grid">
         <div class="anchor-section" id="vot-nom" style="margin-bottom:0">
           <div class="vcard">
@@ -931,7 +973,7 @@ Campferro Ferreteria          Mina
             </div>
           </div>
         </div>
- 
+
         <div class="anchor-section" id="vot-color" style="margin-bottom:0;margin-top:20px">
           <div class="vcard">
             <div class="vcard-head">
@@ -956,14 +998,14 @@ Campferro Ferreteria          Mina
         </div>
       </div>
     </div>
- 
+
     <!-- ══════ INVERSIONS ══════ -->
     <div class="page" id="page-inversions">
- 
+
       <div class="anchor-section" id="inv-envallat-fi">
         <div class="section-label"><span>Obres Finalitzades</span></div>
         <div class="news-feed">
- 
+
           <div class="news-card">
             <div class="news-card-head">
               <div class="news-accent" style="background:#22c55e"></div>
@@ -987,14 +1029,45 @@ Campferro Ferreteria          Mina
               <br>La TMB agraeix la paciència dels veïns de Campferro durant el transcurs de les obres.
             </div>
           </div>
- 
+
         </div>
       </div>
- 
+
+      <div class="anchor-section" id="inv-campfred">
+        <div class="section-label"><span>Nous Projectes — Campfred</span></div>
+        <div class="news-feed">
+
+          <div class="news-card">
+            <div class="news-card-head">
+              <div class="news-accent" style="background:#f59e0b"></div>
+              <div class="news-head-body">
+                <div class="news-meta">
+                  <span class="news-type-tag" style="background:rgba(245,158,11,.12);color:#d97706">Pressupost</span>
+                  <span class="news-date">En planificació</span>
+                </div>
+                <div class="news-title">Pressupost previst per a l'extensió de la xarxa fins a Campfred</div>
+              </div>
+            </div>
+            <div class="news-body">
+              Amb motiu de la descoberta del nou poble de <strong>Campfred</strong> i la planificació de la seva connexió a la xarxa TMB Baliva, s'ha establert un pressupost inicial per al projecte d'extensió:<br><br>
+              <table class="mini-table">
+                <tr><th>Concepte</th><th>Import estimat</th></tr>
+                <tr><td>💰 Pressupost total del projecte</td><td><strong>1.500.000 €</strong></td></tr>
+                <tr><td>🚉 Construcció de noves estacions</td><td>Per determinar</td></tr>
+                <tr><td>🛤️ Extensió de via (L1 i/o L1B)</td><td>Per determinar</td></tr>
+                <tr><td>📋 Estudis de viabilitat</td><td>Inclosos al pressupost</td></tr>
+              </table>
+              <br>Les dades econòmiques d'aquest projecte són <strong>d'accés públic</strong>. La TMB i l'<strong>AFB</strong> treballen conjuntament per determinar quina línia — o ambdues — arribarà fins a Campfred.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="anchor-section" id="inv-estudi-vallat">
         <div class="section-label"><span>Estudis de Cost en Curs</span></div>
         <div class="news-feed">
- 
+
           <div class="news-card">
             <div class="news-card-head">
               <div class="news-accent" style="background:var(--l1)"></div>
@@ -1017,15 +1090,15 @@ Campferro Ferreteria          Mina
               </table>
             </div>
           </div>
- 
+
         </div>
       </div>
- 
+
     </div>
- 
+
   </div><!-- /content -->
 </main>
- 
+
 <!-- MODAL -->
 <div class="overlay" id="overlay" onclick="closeOut(event)">
   <div class="modal">
@@ -1041,17 +1114,17 @@ Campferro Ferreteria          Mina
     </div>
   </div>
 </div>
- 
+
 <script>
 // CLOCK
 function tick(){const n=new Date();document.getElementById('clock').textContent=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0')+':'+String(n.getSeconds()).padStart(2,'0')}
 tick();setInterval(tick,1000);
- 
+
 // NAVIGATION
 const SEC_LABELS={home:'Home',noticies:'Notícies',material:'Material Rodant',votacions:'Votacions',inversions:'Inversions i Economia'};
 const SEC_PAGES={home:'home',noticies:'noticies',material:'material',votacions:'votacions',inversions:'inversions'};
 let currentSection='home';
- 
+
 function switchSection(sec){
   // update rail
   document.querySelectorAll('.sb-icon-btn').forEach(b=>b.classList.remove('active'));
@@ -1070,7 +1143,7 @@ function switchSection(sec){
   // scroll content to top
   document.querySelector('.content').scrollTop=0;
 }
- 
+
 function scrollTo(sec, anchorId){
   // switch section if needed
   if(currentSection!==sec) switchSection(sec);
@@ -1091,7 +1164,7 @@ function scrollTo(sec, anchorId){
     }
   },50);
 }
- 
+
 // MODAL
 const trains={
   s1000:{title:'Sèrie 1000',color:'#ff6b00',line:'<span style="background:#ff6b00;color:#fff;font-family:monospace;font-size:11px;padding:4px 12px;border-radius:5px;font-weight:700">L1 · Línia Taronja</span>',
@@ -1113,7 +1186,7 @@ function openModal(id){
 }
 function closeModal(){document.getElementById('overlay').classList.remove('open')}
 function closeOut(e){if(e.target===document.getElementById('overlay'))closeModal()}
- 
+
 // VOTACIÓ 1
 let v1sel=null,v1done=false,v1c=[0,0,0];
 function selV1(i){if(v1done)return;v1sel=i;document.querySelectorAll('#v1opts .vopt').forEach((el,j)=>el.classList.toggle('vsel',j===i));document.getElementById('v1btn').disabled=false;}
@@ -1125,7 +1198,7 @@ function subV1(){
   const b=document.getElementById('v1btn');b.disabled=true;b.textContent='✓ Vot registrat';
   document.getElementById('v1meta').textContent=tot+' vot'+(tot!==1?'s':'')+' emesos';
 }
- 
+
 // VOTACIÓ 2
 let v2sel=null,v2done=false,v2c=[0,0,0,0,0,0];
 function selV2(i){if(v2done)return;v2sel=i;document.querySelectorAll('#v2opts .copt').forEach((el,j)=>el.classList.toggle('csel',j===i));document.getElementById('v2btn').disabled=false;}
@@ -1136,7 +1209,7 @@ function subV2(){
   const b=document.getElementById('v2btn');b.disabled=true;b.textContent='✓ Vot registrat';
   document.getElementById('v2meta').textContent=tot+' vot'+(tot!==1?'s':'')+' emesos';
 }
- 
+
 // scroll content area instead of window
 document.querySelector('.content').style.overflowY='auto';
 document.querySelector('.content').style.height='calc(100vh - 54px)';
